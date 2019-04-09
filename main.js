@@ -11,6 +11,8 @@
   window.onpopstate = function (e) {
     navigation({ url: e.state.url })
   }
+ 
+  history.replaceState({ url: '/' }, '', '/')
 
   function navigation (state) {
     var titles = {
